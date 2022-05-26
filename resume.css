@@ -200,6 +200,7 @@ a#pdf:hover {
   width: 12.3%;
 }
 
-.skill {
+.skill,
+.cert {
   border-bottom: none;
 }

@@ -1,14 +1,19 @@
-let counter = document.getElementById('counter');
-console.log(counter);
-let visitCount = localStorage.getItem('page_view');
+import { PutCommand } from '@aws-sdk/lib-dynamodb';
+import { ddbDocClient } from './dynamoDBDocClient.js';
 
-// Check if page_view entry is present
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem('page_view', visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem('page_view', 1);
-}
-
-counter.innerHTML = visitCount;
+export const putItem = async () => {
+  // Set the parameters.
+  const params = {
+    TableName: 'VISITORS',
+    Item: {
+      Visits: 1,
+    },
+  };
+  try {
+    const data = await ddbDocClient.send(new PutCommand(params));
+    console.log('Success - item added or updated', data);
+  } catch (err) {
+    console.log('Error', err.stack);
+  }
+};
+putItem();

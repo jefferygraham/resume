@@ -4,8 +4,9 @@
   grid-template-rows: 3fr 1fr 2fr 1fr;
 }
 
-.name {
-  grid-area: name;
+.profile {
+  grid-area: profile;
+  display: flex;
 }
 
 .contact {
@@ -30,8 +31,12 @@
 
 .resume {
   grid-template-areas:
-    'name contact'
+    'profile contact'
     'skills misc'
     'experience misc'
     'education misc';
+}
+
+.profile img {
+  border-radius: 10%;
 }

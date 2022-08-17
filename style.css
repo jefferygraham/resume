@@ -1,0 +1,41 @@
+* {
+  border: 1px solid green;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+
+.name {
+  grid-area: name;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.education {
+  grid-area: education;
+}
+
+.misc {
+  grid-area: misc;
+}
+
+.resume {
+  grid-template-areas:
+    'name contact'
+    'skills misc'
+    'experience misc'
+    'education misc';
+}

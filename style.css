@@ -6,7 +6,6 @@
 
 .name {
   grid-area: name;
-  display: flex;
 }
 
 .contact {

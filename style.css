@@ -1,7 +1,6 @@
 .resume {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   width: 65vw;
   margin: auto;
   color: #1d3344;
@@ -43,12 +42,17 @@
   background-color: #ebebeb;
 }
 
+.footer {
+  grid-area: footer;
+}
+
 .resume {
   grid-template-areas:
     'photo profile contact'
     'skills skills side-panel'
     'experience experience side-panel'
-    'education education side-panel';
+    'education education side-panel'
+    'footer footer footer';
 }
 
 .photo img {

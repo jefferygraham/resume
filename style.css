@@ -44,6 +44,7 @@
 
 .footer {
   grid-area: footer;
+  margin: auto;
 }
 
 .resume {

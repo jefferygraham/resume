@@ -1,16 +1,29 @@
 .resume {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 3fr 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 65vw;
+  margin: auto;
+  color: #1d3344;
 }
 
 .profile {
   grid-area: profile;
+  background-color: #ebebeb;
+}
+
+.photo {
+  grid-area: photo;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
 }
 
 .contact {
   grid-area: contact;
+  color: whitesmoke;
+  background-color: #1d3344;
 }
 
 .skills {
@@ -27,16 +40,18 @@
 
 .misc {
   grid-area: misc;
+  background-color: #ebebeb;
 }
 
 .resume {
   grid-template-areas:
-    'profile contact'
-    'skills misc'
-    'experience misc'
-    'education misc';
+    'photo profile contact'
+    'skills skills misc'
+    'experience experience misc'
+    'education education misc';
 }
 
-.profile img {
+.photo img {
   border-radius: 10%;
+  border: 2px solid #f3b943;
 }

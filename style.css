@@ -38,17 +38,17 @@
   grid-area: education;
 }
 
-.misc {
-  grid-area: misc;
+.side-panel {
+  grid-area: side-panel;
   background-color: #ebebeb;
 }
 
 .resume {
   grid-template-areas:
     'photo profile contact'
-    'skills skills misc'
-    'experience experience misc'
-    'education education misc';
+    'skills skills side-panel'
+    'experience experience side-panel'
+    'education education side-panel';
 }
 
 .photo img {

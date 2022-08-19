@@ -52,6 +52,7 @@ article {
 .footer {
   grid-area: footer;
   margin: auto;
+  text-align: center;
 }
 
 .resume {

@@ -4,13 +4,15 @@ article {
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
-
 a {
-  color: whitesmoke;
   text-decoration: none;
 }
 
-a:hover {
+.contact a {
+  color: whitesmoke;
+}
+
+.contact a:hover {
   color: #ccc;
 }
 

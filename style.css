@@ -1,3 +1,10 @@
+article {
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
 .resume {
   display: grid;
   grid-template-columns: 1fr 4fr 2fr;

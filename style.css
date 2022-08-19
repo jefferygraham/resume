@@ -4,8 +4,17 @@ article {
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
+
 a {
   text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+hr {
+  margin-top: 0;
 }
 
 .contact a {
@@ -27,6 +36,12 @@ a {
 .profile {
   grid-area: profile;
   background-color: #ebebeb;
+  padding-right: 2%;
+}
+
+.profile h3 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .photo {

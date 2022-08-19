@@ -5,6 +5,15 @@ article {
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+
 .resume {
   display: grid;
   grid-template-columns: 1fr 4fr 2fr;
@@ -30,6 +39,12 @@ article {
   grid-area: contact;
   color: whitesmoke;
   background-color: #1d3344;
+  display: flex;
+  align-items: center;
+}
+
+.contact ul {
+  list-style-type: none;
 }
 
 .skills {

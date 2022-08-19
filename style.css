@@ -34,19 +34,42 @@ article {
 
 .skills {
   grid-area: skills;
+  padding: 0 2%;
 }
 
 .experience {
   grid-area: experience;
+  padding: 0 2%;
+}
+
+.experience > ul {
+  list-style-type: none;
+}
+
+.experience h3,
+.education h3 {
+  margin-bottom: 0;
+}
+
+.experience h4,
+.education h4 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .education {
   grid-area: education;
+  padding: 0 2%;
+}
+
+.education > ul {
+  list-style-type: none;
 }
 
 .side-panel {
   grid-area: side-panel;
   background-color: #ebebeb;
+  padding: 0 2%;
 }
 
 .footer {
